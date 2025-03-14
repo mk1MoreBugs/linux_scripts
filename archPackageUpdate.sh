@@ -1,6 +1,6 @@
 #!/bin/bash
 pacman -Suy --noconfirm
 
-paccache -rk1
-pacman -Qdtq | pacman -Rns -
-paccache -ruk0
+paccache -rk2
+pacman -Qdtq | pacman -Rns -  # remove orphan packages
+paccache -ruk0  # remove uninstalled packages
